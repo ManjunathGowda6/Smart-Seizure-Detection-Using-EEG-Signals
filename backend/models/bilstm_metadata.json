@@ -1,0 +1,37 @@
+{
+  "model_name": "cnn_bilstm_v1",
+  "framework": "PyTorch 2.7.1+cu118",
+  "timesteps": 178,
+  "n_features": 1,
+  "input_shape": [
+    1,
+    178
+  ],
+  "datasets_used": [
+    "bonn_csv",
+    "chbmit"
+  ],
+  "seizure_recall": 0.9982,
+  "seizure_precision": 0.9864,
+  "f1_score": 0.9923,
+  "roc_auc": 0.9995,
+  "accuracy": 0.9923,
+  "threshold": 0.5,
+  "class_weight": {
+    "0": 1.0,
+    "1": 2.0
+  },
+  "trained_on": "2026-06-10T12:26:52.766059",
+  "training_time_sec": 1496,
+  "epochs_run": 69,
+  "confusion_matrix": [
+    [
+      6112,
+      85
+    ],
+    [
+      11,
+      6185
+    ]
+  ]
+}

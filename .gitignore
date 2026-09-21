@@ -1,0 +1,13 @@
+node_modules/ 
+__pycache__/ 
+*.pyc 
+.env 
+.env 
+__pycache__/ 
+*.pyc 
+temp_uploads/ 
+.env 
+__pycache__/ 
+temp_uploads/ 
+backend/models/cache/ 
+backend/ml/plots/ 

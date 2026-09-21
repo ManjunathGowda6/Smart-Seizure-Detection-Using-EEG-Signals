@@ -1,0 +1,110 @@
+{
+  "title": "Comparative Analysis: Classical ML vs Deep Learning - CHB-MIT",
+  "dataset": "CHB-MIT Scalp EEG Database",
+  "patients": 24,
+  "split": {
+    "train": "chb01-18",
+    "val": "chb19-21",
+    "test": "chb22-24"
+  },
+  "models": [
+    {
+      "model": "SVM",
+      "accuracy": 0.9636,
+      "precision": 0.7423,
+      "recall": 0.3158,
+      "f1_score": 0.4431,
+      "roc_auc": 0.7056,
+      "confusion_matrix": [
+        [
+          4715,
+          25
+        ],
+        [
+          156,
+          72
+        ]
+      ],
+      "model_type": "Classical ML"
+    },
+    {
+      "model": "LR",
+      "accuracy": 0.97,
+      "precision": 0.8496,
+      "recall": 0.4211,
+      "f1_score": 0.563,
+      "roc_auc": 0.8501,
+      "confusion_matrix": [
+        [
+          4723,
+          17
+        ],
+        [
+          132,
+          96
+        ]
+      ],
+      "model_type": "Classical ML"
+    },
+    {
+      "model": "CNN_LTI",
+      "accuracy": 0.9541,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.5,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "confusion_matrix": [
+        [
+          4740,
+          0
+        ],
+        [
+          228,
+          0
+        ]
+      ],
+      "model_type": "Deep Learning"
+    },
+    {
+      "model": "CNN_BiLSTM",
+      "accuracy": 0.9541,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.4417,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "confusion_matrix": [
+        [
+          4740,
+          0
+        ],
+        [
+          228,
+          0
+        ]
+      ],
+      "model_type": "Deep Learning"
+    }
+  ],
+  "winners": {
+    "best_accuracy": {
+      "model": "LR",
+      "value": 0.97
+    },
+    "best_recall": {
+      "model": "LR",
+      "value": 0.4211
+    },
+    "best_roc_auc": {
+      "model": "LR",
+      "value": 0.8501
+    },
+    "best_f1_score": {
+      "model": "LR",
+      "value": 0.563
+    }
+  }
+}

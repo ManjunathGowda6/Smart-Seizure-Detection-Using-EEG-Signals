@@ -1,0 +1,18 @@
+{
+  "model": "SVM",
+  "accuracy": 0.9636,
+  "precision": 0.7423,
+  "recall": 0.3158,
+  "f1_score": 0.4431,
+  "roc_auc": 0.7056,
+  "confusion_matrix": [
+    [
+      4715,
+      25
+    ],
+    [
+      156,
+      72
+    ]
+  ]
+}
